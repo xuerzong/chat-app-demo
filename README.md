@@ -4,10 +4,10 @@ A chat application UI designed by flutter.
 
 
 ## 效果展示
-![Home](./assets/demo/home.png)
-![Login](./assets/demo/login.png)
-![Message](./assets/demo/message.png)
-![Chat](./assets/demo/chat.png)
+![Home](./assets/demo/home.png){:height="20%" width="20%"}
+![Login](./assets/demo/login.png){:height="20%" width="20%"}
+![Message](./assets/demo/message.png){:height="20%" width="20%"}
+![Chat](./assets/demo/chat.png){:height="20%" width="20%"}
 
 ## 说明
 
