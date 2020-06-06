@@ -14,11 +14,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'QAQ',
       debugShowCheckedModeBanner: false,
-      // theme: ThemeData(
-      //   // primarySwatch: Colors.brown,
-      //   canvasColor: Color.fromRGBO(85,198,121,1),
-      // ),
-      // initialRoute: '/login',
       routes: {
         '/index': (context) => MessagePage(),
         '/chat': (context) => ChatPage(),

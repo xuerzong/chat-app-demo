@@ -1,6 +1,13 @@
 # QAQ
 
-A new Flutter project.
+A chat application UI designed by flutter.
+
+
+## 效果展示
+![Home](./assets/demo/home.png)
+![Login](./assets/demo/login.png)
+![Message](./assets/demo/message.png)
+![Chat](./assets/demo/chat.png)
 
 ## 说明
 
