@@ -46,7 +46,7 @@ class _ChatPageState extends State<ChatPage> {
                 child: Container(
               alignment: Alignment.topCenter,
               // padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 80),
-              padding: EdgeInsets.only(top: 80, left: 16, right: 16),
+              padding: EdgeInsets.only(top: 100, left: 16, right: 16),
               child: SingleChildScrollView(
                 reverse: true,
                 child: Column(

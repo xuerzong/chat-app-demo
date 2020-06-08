@@ -100,7 +100,7 @@ class _MessagePageState extends State<MessagePage> {
             FadeAnimation(1, ClipPath(
               clipper: _myClipper(),
               child: Container(
-                height: 150,
+                height: 200,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: Colors.green[900].withOpacity(.5)

@@ -62,115 +62,119 @@ class LoginPage extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(30),
             child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              FadeAnimation(
-                  1,
-                  Text(
-                    'QAQ Chat',
-                    style: TextStyle(
-                        fontFamily: 'Raleway',
-                        color: Colors.white,
-                        fontSize: 40),
-                  )),
-              FadeAnimation(
-                  1.2,
-                  Text(
-                    'Please login',
-                    style: TextStyle(
-                        fontFamily: 'Raleway',
-                        color: Colors.white,
-                        fontSize: 16),
-                  )),
-              SizedBox(
-                height: 30,
-              ),
-              FadeAnimation(
-                  1.5,
-                  Container(
-                    padding: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.white),
-                    child: Column(
-                      children: <Widget>[
-                        Container(
-                          decoration: BoxDecoration(
-                              border: Border(
-                                  bottom: BorderSide(color: Colors.grey[300]))),
-                          child: TextField(
-                            controller: _nameController,
-                            onChanged: (_value){
-                              username = _value;
-                            },
-                            style: TextStyle(fontFamily: 'Raleway'),
-                            decoration: InputDecoration(
-                                border: InputBorder.none,
-                                hintStyle: TextStyle(
-                                    color: Colors.grey.withOpacity(.8)),
-                                hintText: "Your Name"),
-                          ),
-                        ),
-                        Container(
-                          child: TextField(
-                            controller: _passwdController,
-                            onChanged: (_value) {
-                              userpassword = _value;
-                            },
-                            obscureText: true,
-                            style: TextStyle(fontFamily: 'Raleway'),
-                            decoration: InputDecoration(
-                                border: InputBorder.none,
-                                hintStyle: TextStyle(
-                                    color: Colors.grey.withOpacity(.8)),
-                                hintText: "Your Password"),
-                          ),
-                        ),
-                      ],
-                    ),
-                  )),
-              SizedBox(
-                height: 30,
-              ),
-              FadeAnimation(
-                  1.8,
-                  Center(
-                    child: Container(
-                      width: 80,
-                      height: 80,
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                FadeAnimation(
+                    1,
+                    Text(
+                      'QAQ Chat',
+                      style: TextStyle(
+                          fontFamily: 'Raleway',
+                          color: Colors.white,
+                          fontSize: 40),
+                    )),
+                FadeAnimation(
+                    1.2,
+                    Text(
+                      'Please login',
+                      style: TextStyle(
+                          fontFamily: 'Raleway',
+                          color: Colors.white,
+                          fontSize: 16),
+                    )),
+                SizedBox(
+                  height: 30,
+                ),
+                FadeAnimation(
+                    1.5,
+                    Container(
                       padding: EdgeInsets.all(10),
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(50),
-                        color: Color.fromRGBO(94, 115, 206, .5),
+                          borderRadius: BorderRadius.circular(10),
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(color: Colors.grey[500], blurRadius: 10)
+                          ]),
+                      child: Column(
+                        children: <Widget>[
+                          Container(
+                            decoration: BoxDecoration(
+                                border: Border(
+                                    bottom:
+                                        BorderSide(color: Colors.grey[300]))),
+                            child: TextField(
+                              controller: _nameController,
+                              onChanged: (_value) {
+                                username = _value;
+                              },
+                              style: TextStyle(fontFamily: 'Raleway'),
+                              decoration: InputDecoration(
+                                  border: InputBorder.none,
+                                  hintStyle: TextStyle(
+                                      color: Colors.grey.withOpacity(.8)),
+                                  hintText: "Your Name"),
+                            ),
+                          ),
+                          Container(
+                            child: TextField(
+                              controller: _passwdController,
+                              onChanged: (_value) {
+                                userpassword = _value;
+                              },
+                              obscureText: true,
+                              style: TextStyle(fontFamily: 'Raleway'),
+                              decoration: InputDecoration(
+                                  border: InputBorder.none,
+                                  hintStyle: TextStyle(
+                                      color: Colors.grey.withOpacity(.8)),
+                                  hintText: "Your Password"),
+                            ),
+                          ),
+                        ],
                       ),
+                    )),
+                SizedBox(
+                  height: 30,
+                ),
+                FadeAnimation(
+                    1.8,
+                    Center(
                       child: Container(
-                          width: 50,
-                          height: 50,
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: Color.fromRGBO(94, 115, 206, 1)),
-                          child: IconButton(
-                              icon: Icon(
-                                Icons.done,
-                                color: Colors.white,
-                              ),
-                              onPressed: () {
-                                print(username);
-                                print(userpassword);
-                                _nameController.text = '';
-                                _passwdController.text = '';
-                                // login
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => MessagePage()),
-                                );
-                              })),
-                    ),
-                  )),
-            ],
-          ),
+                        width: 80,
+                        height: 80,
+                        padding: EdgeInsets.all(10),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          color: Color.fromRGBO(94, 115, 206, .5),
+                        ),
+                        child: Container(
+                            width: 50,
+                            height: 50,
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Color.fromRGBO(94, 115, 206, 1)),
+                            child: IconButton(
+                                icon: Icon(
+                                  Icons.done,
+                                  color: Colors.white,
+                                ),
+                                onPressed: () {
+                                  print(username);
+                                  print(userpassword);
+                                  _nameController.text = '';
+                                  _passwdController.text = '';
+                                  // login
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => MessagePage()),
+                                  );
+                                })),
+                      ),
+                    )),
+              ],
+            ),
           )
         ],
       )),

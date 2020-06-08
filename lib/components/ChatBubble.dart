@@ -24,12 +24,12 @@ class ChatBubble extends StatelessWidget {
                 topLeft: Radius.circular(10),
                 bottomLeft: isMe ? Radius.circular(10) : Radius.circular(0),
               ),
-              // boxShadow: [
-              //   BoxShadow(
-              //       color: Colors.grey[300],
-              //       offset: isMe ? Offset(-2.0, 2.0) : Offset(2.0, 2.0),
-              //       blurRadius: 6.0)
-              // ]
+              boxShadow: [
+          BoxShadow(
+            color: Colors.grey[500],
+            blurRadius: 10
+          )
+        ]
             ),
           constraints: BoxConstraints(
               maxWidth: MediaQuery.of(context).size.width / 1.6, minHeight: 40),
