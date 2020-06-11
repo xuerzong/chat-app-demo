@@ -1,6 +1,6 @@
 # QAQ
 
-A chat application UI designed by flutter.
+A chat application UI designed by flutter. Note: Just UI!!!
 
 
 ## 效果展示
