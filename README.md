@@ -32,3 +32,7 @@ child: ChatInput(
     },
 ),
 ```
+
+## License
+
+The MIT License.
